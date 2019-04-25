@@ -9,17 +9,15 @@ Table of contents
 =================
 
 <!--ts-->
-   * [gh-md-toc](#gh-md-toc)
+   * [ChainAnalysis](#ChaynAnalysis)
    * [Table of contents](#table-of-contents)
    * [Installation](#installation)
    * [Usage](#usage)
-      * [STDIN](#stdin)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-      * [Auto insert and update TOC](#auto-insert-and-update-toc)
-      * [Github token](#github-token)
+      * [Loading files](#Loading-files)
+            * [Pre analysis](#Pre-analysis)
+            * [Post analysis](#Post-analysis)
+      * [Analysing data]()
+      * [Ploting analized data]()
+      * [Customizing plots]()
    * [Tests](#tests)
-   * [Dependency](#dependency)
 <!--te-->
