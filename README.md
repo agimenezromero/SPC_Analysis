@@ -23,21 +23,22 @@ Table of contents
 <!--te-->
 
 # Installation
-1. Download ChainAnalysis.pyw file (no console python script) and Data folder and copy in the same location
-2. You must have the following python3 packages installed
+1. Download ChainAnalysis.pyw file (no console python script) and Data folder and copy in the same location.
+2. You must have the following python3 packages installed:
    - NumPy
    - SciPy
    - MdAnalysis
    - Matplotlib
    - Pandas
    - PyQt5
-3. To run de program simply run the ChainAnalysis.pyw file by double clicking
+3. To run de program simply run the ChainAnalysis.pyw file by double clicking.
 
 # Usage
 
 ## Loading Files
 
 ### Pre analysis
-In order to realize any analysis topology and trajectory files of the analysed sistem are required
-
+- In order to realize any analysis topology and trajectory files of the analysed sistem are required.
+- The topology file is usually a single frame trajectory file (i.e the initial frame) while trajectory file include the trajectories for all the frames.
+- The admited formats are those admited by MdAnalysis to built the univers object, which include .pdb, .dcd, .xyz, etc. See [MdAnalysis documentation](https://www.mdanalysis.org/docs/) for further information.
 
