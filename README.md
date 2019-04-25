@@ -13,7 +13,7 @@ Table of contents
    * [Table of contents](#table-of-contents)
    * [Installation](#installation)
    * [Usage](#usage)
-      * [Loading files](#Loading-files)
+     * [Loading files](#Loading-files)
        * [Pre analysis](#Pre-analysis)
        * [Post analysis](#Post-analysis)
       * [Analysing data](#Analysing-data)
