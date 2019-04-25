@@ -1,4 +1,4 @@
-# ChainAnalysis
+# Chain Analysis
 Graphical interface in PyQt5 for the analysis of chain formation.
 
 # Overview
@@ -9,7 +9,7 @@ Table of contents
 =================
 
 <!--ts-->
-   * [ChainAnalysis](#ChaynAnalysis)
+   * [ChainAnalysis](#Chayn-Analysis)
    * [Table of contents](#table-of-contents)
    * [Installation](#installation)
    * [Usage](#usage)
