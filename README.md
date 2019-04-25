@@ -42,3 +42,6 @@ Table of contents
 - The topology file is usually a single frame trajectory file (i.e the initial frame) while trajectory file include the trajectories for all the frames.
 - The admited formats are those admited by MdAnalysis to built the univers object, which include .pdb, .dcd, .xyz, etc. See [MdAnalysis documentation](https://www.mdanalysis.org/docs/) for further information.
 
+### Post analysis
+- After any analysis is done some .npy files are saved into self-created folders. You will have to load them to make the desired plots.
+- More information about this files will be given in the following sections
