@@ -23,7 +23,10 @@ Table of contents
         * [Radial Distribution Function](#Radial-Distribution-Function)
       * [Ploting analized data](#Ploting-analized-data)
       * [Customizing plots](#Customizing-plots)
-   * [Tests](#tests)
+   * [Examples](#Examples)
+   * [Authors](#Authors)
+   * [License](#License)
+   * [Acknowledgments](#Acknowledgments)
 <!--te-->
 
 # Installation
@@ -59,19 +62,50 @@ The Cluster Finder method combines MdAnalysis and SciPy libraries to find the nu
 
 Although this information may be irrelevant for some users it could be important for others. Now we'll explain in some lines how to use properly this analysis method in our software.
 
-After loading the topology and trajectory files, we just have to set the parameters properly to perform our desired analysis. This parameters are the following:
+After loading the topology and trajectory files, we just have to set the parameters properly to perform our desired analysis. At the end of the analysis a .npy file is saved in the `Clusters` folder, inside the `Analysis files` folder, containing the number of selected particles that are found to be in a cluster over all the selected frames. The parameters needed are the following:
 
 - `Radial cutoff`: Maximum interaction distance of the particles. Should be set accordingly to the RDF first minimum (as we are accounting for the firsts neighbours).
-- Initial frame: Frame where the analysis will begin
-- Final frame: Frame where thr analysis will finish
-- Time step: Number of frames between consecutive frames in the analysis. In a good computer this method can take about 5 minutes to analyse 500 frames, so set the time step accordingly to this consideration.
-- Selection 1: Type of particles to analyse. The selection syntax is the same used by [MdAnalysis](https://www.mdanalysis.org/docs/documentation_pages/selections.html) or [Visual Molecular Dynamics (VMD) software](https://www.ks.uiuc.edu/Research/vmd/current/ug/).
+- `Initial frame`: Frame where the analysis will begin
+- `Final frame`: Frame where thr analysis will finish
+- `Time step`: Number of frames between consecutive frames in the analysis. In a good computer this method can take about 5 minutes to analyse 500 frames, so set the time step accordingly to this consideration.
+- `Selection 1`: Type of particles to analyse. The selection syntax is the same used by [MdAnalysis](https://www.mdanalysis.org/docs/documentation_pages/selections.html) or [Visual Molecular Dynamics (VMD) software](https://www.ks.uiuc.edu/Research/vmd/current/ug/).
 
 *The other paramaters are not used in this particular analysis
 
 ### Linear Chains Finder
+The Linear Chains Finder method uses a usefull MDAnalysis geometric selection to decide whether selected particles are in a linear chain or not. The selection used is `cyzone`, with which a cylinder is formed arround every particle in the imput selection and search for neighbours. At the end of the analysis a .npy file is saved in the `Linear chains` folder, inside the `Analysis files` folder, containing the number of selected particles that are found to be in a chain over all the selected frames.
+
+The parameters needed for this analysis are the following:
+
+- `Radial cutoff`: It must be set to the value of the particles radius
+- `Linear cutoff`: Maximum interaction distance of the particles in the z axis. Should be set accordingly to the RDF first minimum (as we are accounting for the firsts neighbours).
+- `Initial frame`: Frame where the analysis will begin
+- `Final frame`: Frame where thr analysis will finish
+- `Time step`: Number of frames between consecutive frames in the analysis. In a good computer this method can take about 25 minutes to analyse 500 frames, so set the time step accordingly to this consideration.
+- `Selection 1`: Type of particles to analyse. 
+
+*The other paramaters are not used in this particular analysis
 
 ### Isolated Particle Finder
+The Isolated Particle Finder method uses a spherical selection to determine if selected particles are isolated or not by counting the number of neighbours at a certain distance. With this information, it is clear that we can also know the number of general aggregated particles, being linear aggregates or other structures, as the laterally aggregated particles, by comparison with the results of the same temporal analysis done by the Linear Chains Finder (as if the particles are not linearly aggregated, they are laterally aggregated). At the end of the analysis two .npy files are saved in the `Isolated particles` and `General aggregates` folders, inside the `Analysis files` folder, containing the number of isolated particles and the number of particles in general aggregates, respectively over all the selected frames.
+
+The parameters needed for this analysis are the following:
+
+- `Radial cutoff`: Maximum interaction distance of the particles. Should be set accordingly to the RDF first minimum (as we are accounting for the firsts neighbours).
+- `Initial frame`: Frame where the analysis will begin
+- `Final frame`: Frame where thr analysis will finish
+- `Time step`: Number of frames between consecutive frames in the analysis. In a good computer this method can take about 25 minutes to analyse 500 frames, so set the time step accordingly to this consideration.
+- `Selection 1`: Type of particles to analyse. 
+
+*The other paramaters are not used in this particular analysis
 
 ### Radial Distribution Function
+The RDF method simply computes a radial distribution function using [MDAnalysis.analysis.rdf.InterRDF](https://www.mdanalysis.org/docs/documentation_pages/analysis/rdf.html).
 
+The parameters needed for this analysis are the following:
+
+- `Initial frame`: Frame where the analysis will begin
+- `Final frame`: Frame where thr analysis will finish
+- `Time step`: Number of frames between consecutive frames in the analysis.
+- `Selection 1`: Type of group 1 particles.
+- `Selection 2`: Type of group 2 particles.
