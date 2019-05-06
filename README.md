@@ -21,7 +21,7 @@ Table of contents
         * [Linear Chains Finder](#Linear-Chains-Finder)
         * [Isolated Particle Finder](#Isolated-Particle-Finder)
         * [Radial Distribution Function](#Radial-Distribution-Function)
-      * [Ploting analized data](#Ploting-analized-data)
+      * [Plotting analised data](#Ploting-analised-data)
       * [Customizing plots](#Customizing-plots)
    * [Examples](#Examples)
    * [Authors](#Authors)
@@ -69,6 +69,7 @@ After loading the topology and trajectory files, we just have to set the paramet
 - `Final frame`: Frame where thr analysis will finish
 - `Time step`: Number of frames between consecutive frames in the analysis. In a good computer this method can take about 5 minutes to analyse 500 frames, so set the time step accordingly to this consideration.
 - `Selection 1`: Type of particles to analyse. The selection syntax is the same used by [MdAnalysis](https://www.mdanalysis.org/docs/documentation_pages/selections.html) or [Visual Molecular Dynamics (VMD) software](https://www.ks.uiuc.edu/Research/vmd/current/ug/).
+- `Filename`: The name of the .npy file that will be saved.
 
 *The other paramaters are not used in this particular analysis
 
@@ -83,6 +84,7 @@ The parameters needed for this analysis are the following:
 - `Final frame`: Frame where thr analysis will finish
 - `Time step`: Number of frames between consecutive frames in the analysis. In a good computer this method can take about 25 minutes to analyse 500 frames, so set the time step accordingly to this consideration.
 - `Selection 1`: Type of particles to analyse. 
+- `Filename`: The name of the .npy file that will be saved.
 
 *The other paramaters are not used in this particular analysis
 
@@ -96,6 +98,7 @@ The parameters needed for this analysis are the following:
 - `Final frame`: Frame where thr analysis will finish
 - `Time step`: Number of frames between consecutive frames in the analysis. In a good computer this method can take about 25 minutes to analyse 500 frames, so set the time step accordingly to this consideration.
 - `Selection 1`: Type of particles to analyse. 
+- `Filename`: The name of the .npy file that will be saved.
 
 *The other paramaters are not used in this particular analysis
 
@@ -109,3 +112,14 @@ The parameters needed for this analysis are the following:
 - `Time step`: Number of frames between consecutive frames in the analysis.
 - `Selection 1`: Type of group 1 particles.
 - `Selection 2`: Type of group 2 particles.
+- `Filename`: The name of the .npy file that will be saved.
+
+## Plotting analised data
+Once desired analysis are done is time to visualise the results. For this purpose a dropdown menu has been implemented in the graphical interface in order to let the user choose the results to plot. Nevertheless the .npy file saved by each analysis method, previously mentioned, must be loaded using the corresponding load button.
+
+Once the data file is loaded and the corresponding option of the dropdown menu selected the only thing left to do is to push the plot button. Then, if all steps have been correctly made, there will appeaar a matplotlib.pyplot window with the analysis results.
+
+In the following section we will focus in how to customize this plots.
+
+## Customizing plots
+
