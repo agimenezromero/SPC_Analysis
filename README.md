@@ -61,11 +61,11 @@ Although this information may be irrelevant for some users it could be important
 
 After loading the topology and trajectory files, we just have to set the parameters properly to perform our desired analysis. This parameters are the following:
 
-- Radial cutoff: Maximum interaction distance of the particles. Should be set accordingly to the RDF first minimum (as we are accounting for the firsts neighbours).
+- `Radial cutoff`: Maximum interaction distance of the particles. Should be set accordingly to the RDF first minimum (as we are accounting for the firsts neighbours).
 - Initial frame: Frame where the analysis will begin
 - Final frame: Frame where thr analysis will finish
 - Time step: Number of frames between consecutive frames in the analysis. In a good computer this method can take about 5 minutes to analyse 500 frames, so set the time step accordingly to this consideration.
-- Selection 1: Type of particles to analyse. The selection syntax is the same used by MdAnalysis or [Visual Molecular Dynamics (VMD) software](https://www.ks.uiuc.edu/Research/vmd/current/ug/).
+- Selection 1: Type of particles to analyse. The selection syntax is the same used by [MdAnalysis](https://www.mdanalysis.org/docs/documentation_pages/selections.html) or [Visual Molecular Dynamics (VMD) software](https://www.ks.uiuc.edu/Research/vmd/current/ug/).
 
 *The other paramaters are not used in this particular analysis
 
