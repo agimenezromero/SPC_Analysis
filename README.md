@@ -110,6 +110,8 @@ The parameters needed for this analysis are the following:
 - `Initial frame`: Frame where the analysis will begin
 - `Final frame`: Frame where thr analysis will finish
 - `Time step`: Number of frames between consecutive frames in the analysis.
+- `r max`: Maximum radial distance
+- `dr`: Radial distance step
 - `Selection 1`: Type of group 1 particles.
 - `Selection 2`: Type of group 2 particles.
 - `Filename`: The name of the .npy file that will be saved.
