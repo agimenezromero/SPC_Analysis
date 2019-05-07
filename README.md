@@ -30,15 +30,15 @@ Table of contents
 <!--te-->
 
 # Installation
-1. Download ChainAnalysis.pyw file (no console python script) and Data folder and copy in the same location.
-2. You must have the following python3 packages installed:
+1. Download the project and copy in your prefered directory.
+2. You must have the following *python3* packages installed:
    - NumPy
    - SciPy
    - MdAnalysis
    - Matplotlib
    - Pandas
    - PyQt5
-3. To run de program simply run the ChainAnalysis.pyw file by double clicking.
+3. To run de program simply run the ChainAnalysis.pyw file by double clicking or execute via cmd as `python3 MagChain_CgainAnalysis.pyw` in the corresponding directory.
 
 # Usage
 
