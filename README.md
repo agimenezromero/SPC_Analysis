@@ -1,5 +1,5 @@
-# Magnetic Chain Analysis
-Graphical interface in PyQt5 for the analysis of chain formation.
+# SPC Chain Analysis
+Graphical interface in PyQt5 for the analysis of superparamagnetic particles chain formation.
 
 # Overview
 The aim of this program is to simplify and automate the analysis of chain formation of superparamagnetic colloids under magnetic fields. With this graphical interface the analysis of different kinds of aggregation, including chain formation among others, can be done simply and easily, so anyone with basic or even null programming notions will be able to use all the software features. Although the software use is quite intuitive, a documentation has been written to assure its properly use, so we strongly recommend having a look on it, specially to understand the use of the > lateral_chains_finder function.
@@ -9,7 +9,7 @@ Table of contents
 =================
 
 <!--ts-->
-   * [ChainAnalysis](#Magnetic Chain-Analysis)
+   * [Overview](#Overview)
    * [Table of contents](#table-of-contents)
    * [Installation](#installation)
    * [Usage](#usage)
@@ -38,7 +38,7 @@ Table of contents
    - Matplotlib
    - Pandas
    - PyQt5
-3. To run de program simply run the ChainAnalysis.pyw file by double clicking or execute via cmd as `python3 MagChain_CgainAnalysis.pyw` in the corresponding directory.
+3. To run de program simply run the ChainAnalysis.pyw file by double clicking or execute via cmd as `python3 SPC_Analysis.pyw` in the corresponding directory.
 
 # Usage
 
