@@ -23,7 +23,6 @@ Table of contents
         * [Radial Distribution Function](#Radial-Distribution-Function)
       * [Plotting analised data](#Ploting-analised-data)
       * [Plot customisation](#Plot-customisation)
-   * [Examples](#Examples)
    * [Authors](#Authors)
    * [License](#License)
    * [Acknowledgments](#Acknowledgments)
@@ -144,3 +143,8 @@ In the line below some checkbox are available:
 - `Last frame`: Plot until the last frame available.
 - `Plot average`: Plot an average computed from the equilibrium value.
 
+# Authors
+- A. Giménez-Romero
+
+# License
+This project is licensed under the GNU General Public License - see the [LICENSE.md](https://github.com/agimenezromero/SPC_Analysis/blob/master/LICENSE) file for details
