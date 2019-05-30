@@ -22,7 +22,7 @@ Table of contents
         * [Isolated Particle Finder](#Isolated-Particle-Finder)
         * [Radial Distribution Function](#Radial-Distribution-Function)
       * [Plotting analised data](#Ploting-analised-data)
-      * [Customizing plots](#Customizing-plots)
+      * [Plot customisation](#Plot-customisation)
    * [Examples](#Examples)
    * [Authors](#Authors)
    * [License](#License)
@@ -123,5 +123,26 @@ Once the data file is loaded and the corresponding option of the dropdown menu s
 
 In the following section we will focus in how to customize this plots.
 
-## Customizing plots
+## Plot customization
+Almost all matplotlib.pyplot parameters can be changed in an easy way by the user. The available ones are the following:
 
+**IMPORTANT**: In order to customize several lines, separe the parameters by a space.
+
+- `Title`: Write here the plot title.
+- `xlabel`: Write here the label for the x axis.
+- `ylabel`: Write here the label for the y axis.
+- `Data labels`: Write here the labels for the different lines that will be set in the legend.
+- `Data linestyles`: Write here the linestyles for the different lines ploted following the matplotlib.pyplot [syntax](https://matplotlib.org/gallery/lines_bars_and_markers/line_styles_reference.html).
+- `Data colors`: Write here the colors for the different lines ploted following the matplotlib.pyplot [syntax](https://matplotlib.org/2.0.2/examples/color/named_colors.html).
+- `Data markers`: Write here the markers for the different lines ploted following the matplotlib.pyplot [syntax](https://matplotlib.org/api/markers_api.html).
+
+*The same is applied to the average lines.*
+
+In the line below some checkbox are available:
+
+- `Default`: Set default matplotlib.pyplots settings.
+- `Last frame`: Plot until the last frame available.
+- `Plot average`: Plot an average computed from the equilibrium value.
+
+
+Finally, you can also customize the ploted figure by changing it's shape, background color or other parameters.
