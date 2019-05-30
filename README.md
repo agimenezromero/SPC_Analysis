@@ -144,5 +144,3 @@ In the line below some checkbox are available:
 - `Last frame`: Plot until the last frame available.
 - `Plot average`: Plot an average computed from the equilibrium value.
 
-
-Finally, you can also customize the ploted figure by changing it's shape, background color or other parameters.
